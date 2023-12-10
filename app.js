@@ -49,7 +49,7 @@ const jwt = require('jsonwebtoken');
 const User = require('./models/dbmodel');
 
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.json({ success: "true" });
 });
 
 
