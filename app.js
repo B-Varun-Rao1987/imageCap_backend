@@ -49,9 +49,8 @@ const jwt = require('jsonwebtoken');
 const User = require('./models/dbmodel');
 
 app.get('/', (req, res) => {
-    res.json({ success: "true" });
+    res.sendStatus(200).json({ success: "true" });
 });
-
 
 // --------------- Register new user ------------------
 app.post('/register', async (req, res) => {
